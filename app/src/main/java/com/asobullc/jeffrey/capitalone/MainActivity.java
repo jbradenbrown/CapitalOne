@@ -36,14 +36,14 @@ public class MainActivity extends Activity implements OnClickListener {
 
         // Load the ImageView that will host the animation and
         // set its background to our AnimationDrawable XML resource.
-        ImageView img = (ImageView)findViewById(R.id.selected);
-        img.setBackgroundResource(R.drawable.animation);
+        //ImageView img = (ImageView)findViewById(R.id.selected);
+        //img.setBackgroundResource(R.drawable.animation);
 
         // Get the background, which has been compiled to an AnimationDrawable object.
-        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
+        //AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
 
         // Start the animation (looped playback by default).
-        frameAnimation.start();
+        //frameAnimation.start();
 
     }
 
