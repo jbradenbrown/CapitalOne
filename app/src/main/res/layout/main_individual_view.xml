@@ -101,7 +101,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText345"
         android:layout_weight="0.05"
-        android:text="$500/1000"
+        android:text="$750/1000"
         android:gravity="center"
         android:textColor="#000000"
         android:clickable="false"
