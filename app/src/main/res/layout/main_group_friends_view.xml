@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:stretchColumns="1"
+    android:background="#FFFFFF"
     android:id="@+id/goals">
 
     <TableRow>
@@ -46,7 +47,56 @@
             android:text="12/9/2014"
             android:gravity="right"
             android:padding="10dip" />
-
     </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Members"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow
+        android:background="#FFFF66" >
+        <TextView
+            android:text="Jeffrey"
+            android:padding="10dip"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow
+        android:background="#99FF66" >
+        <TextView
+            android:text="Jennifer"
+            android:padding="10dip"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow
+        android:background="#FF3333" > >
+        <TextView
+            android:text="Kevin"
+            android:padding="10dip"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
 
 </TableLayout>
