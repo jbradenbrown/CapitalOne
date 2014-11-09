@@ -12,10 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:padding="100dp"
         android:layout_gravity="center_horizontal"
-        android:background="#ffff000b"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/RedHairSmile"/>
 
     <EditText
         android:layout_width="match_parent"
