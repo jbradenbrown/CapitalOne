@@ -6,128 +6,91 @@
     android:weightSum="1">
 
 
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_weight="0.81">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/textView"
-            android:layout_weight="0.81" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/toGroup"
-            android:layout_weight="0.81" />
-
-        </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:id="@+id/individual"
-        android:weightSum="1">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/newProfile"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/red_hair_smile_transparent" />
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="290dp"
-            android:layout_height="109dp"
-            android:weightSum="1">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="Sally Emerson"
-                android:ems="10"
-                android:id="@+id/editText" />
-
-            <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageButton"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.64" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="107dp"
-        android:stretchColumns="1">
-        android:id="@+id/goals">
-
-        <TableRow>
-            <TextView
-                android:text="Daily Goal: "
-                android:padding="5dip" />
-
-            <TextView
-                android:text="Amount"
-                android:gravity="right"
-                android:padding="5dip" />
-
-        </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090" />
-
-        <TableRow>
-            <TextView
-                android:text="Weekly Goal:"
-                android:padding="5dip" />
-
-            <TextView
-                android:text="Amount"
-                android:gravity="right"
-                android:padding="5dip" />
-
-        </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090" />
-
-        <TableRow>
-            <TextView
-                android:text="Monthly Goal: "
-                android:padding="5dip" />
-
-            <TextView
-                android:text="Amount"
-                android:gravity="right"
-                android:padding="5dip" />
-
-        </TableRow>
-
-    </TableLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/newProfile"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/red_hair_smile_transparent"
+        android:layout_gravity="center_horizontal" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:inputType="textPersonName"
+        android:text="Sally Emerson"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:gravity="center"/>
+
+    <!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="107dp"-->
+        <!--android:stretchColumns="1">-->
+        <!--android:id="@+id/goals">-->
+
+        <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Daily Goal: "&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="5dip" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Amount"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="right"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="5dip" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<View&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="2dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#FF909090" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Weekly Goal:"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="5dip" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Amount"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="right"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="5dip" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+
+        <!--<View-->
+            <!--android:layout_height="2dip"-->
+            <!--android:background="#FF909090" />-->
+
+        <!--<TableRow>-->
+            <!--<TextView-->
+                <!--android:text="Monthly Goal: "-->
+                <!--android:padding="5dip" />-->
+
+            <!--<TextView-->
+                <!--android:text="Amount"-->
+                <!--android:gravity="right"-->
+                <!--android:padding="5dip" />-->
+
+        <!--</TableRow>-->
+
+    <!--</TableLayout>-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText34"
         android:layout_weight="0.05"
-        android:text="Charts" />
+        android:text="Monthly Goal"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText345"
+        android:layout_weight="0.05"
+        android:text="$500/1000"
+        android:gravity="center"/>
+    
 
     <ImageView
         android:layout_width="300dp"
@@ -136,6 +99,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:src="@drawable/chart_temp" />
+
+    <Button
+        android:layout_width="37dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/toGroup"
+        android:layout_gravity="center_horizontal" />
+
 
 
 </LinearLayout>
