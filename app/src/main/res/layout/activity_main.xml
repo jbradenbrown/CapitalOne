@@ -14,12 +14,12 @@
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:src="@drawable/RedHairSmile"/>
+        android:src="@drawable/red_hair_smile"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/username"
         android:paddingTop="50dp"
         android:layout_gravity="center_horizontal" />
 
@@ -29,13 +29,13 @@
         android:inputType="textPassword"
         android:ems="10"
         android:paddingTop="50dp"
-        android:id="@+id/editText2" />
+        android:id="@+id/password" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:padding="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
