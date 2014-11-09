@@ -18,7 +18,7 @@ public class MainGroupActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_group_view);
         imageView1 = (ImageView) findViewById(R.id.imageView1);
         Bitmap bm = BitmapFactory.decodeResource(getResources(),R.drawable.red_hair_smile);
         roundedImage = new RoundImage(bm);
