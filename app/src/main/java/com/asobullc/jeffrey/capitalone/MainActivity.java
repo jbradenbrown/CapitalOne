@@ -3,6 +3,7 @@ package com.asobullc.jeffrey.capitalone;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.Menu;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -31,6 +33,17 @@ public class MainActivity extends Activity implements OnClickListener {
 
         loginButton = (Button) findViewById(R.id.loginButton);
         loginButton.setOnClickListener(this);
+
+        // Load the ImageView that will host the animation and
+        // set its background to our AnimationDrawable XML resource.
+        ImageView img = (ImageView)findViewById(R.id.selected);
+        img.setBackgroundResource(R.drawable.animation);
+
+        // Get the background, which has been compiled to an AnimationDrawable object.
+        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
+
+        // Start the animation (looped playback by default).
+        frameAnimation.start();
     }
 
     public void onClick(View view) {
