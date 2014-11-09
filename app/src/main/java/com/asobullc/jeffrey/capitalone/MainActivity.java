@@ -34,7 +34,10 @@ public class MainActivity extends Activity implements OnClickListener {
     }
 
     public void onClick(View view) {
-        try {
+        Toast.makeText(getBaseContext(), "Login Successful", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, MainSettingsActivity.class);
+        startActivity(intent);
+      /*  try {
             if(validateLogin() == true) {
                 Toast.makeText(getBaseContext(), "Login Successful", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(this, MainSettingsActivity.class);
@@ -44,7 +47,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 Toast.makeText(getBaseContext(), "Login Failed", Toast.LENGTH_LONG).show();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } */
     }
 
 
