@@ -1,6 +1,7 @@
 package com.asobullc.jeffrey.capitalone;
 
 import android.app.Activity;
+import android.os.Looper;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -31,13 +32,11 @@ public class ServerUtilities {
         }
 
         public void run () {
-            System.out.println("AGBASDGBIAWGIHASDGBIASEFBGIWADGBIADGSIBDWAGVBIWADIVGBAWDBVI");
+            Looper.prepare();
             String recv;
             out.println(write);
             try {
-                System.out.println("Befre");
                 recv = in.readLine();
-                System.out.println("After");
                 activity.inputHandler(recv);
             }
             catch (Exception e) {System.out.println(e.getMessage());}

@@ -58,7 +58,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
     public void nextView(boolean valid) {
         Intent intent = new Intent(this, MainSettingsActivity.class);
-        startActivity(intent);
             if(valid) {
                 Toast.makeText(getBaseContext(), "Login Successful", Toast.LENGTH_LONG).show();
                 startActivity(intent);
@@ -92,11 +91,14 @@ public class MainActivity extends Activity implements OnClickListener {
 
     public void inputHandler(String input) {
         String[] args = input.split(" ");
-        nextView(true);
-        if (args[0].equals("true"))
+        if (args[0].equals("true")) {
             nextView(true);
-        else if (args[0].equals("false"))
+            System.out.println("Is true");
+        }
+        else if (args[0].equals("false")) {
             nextView(false);
+            System.out.println("is false");
+        }
     }
 
     public boolean validateLogin() throws IOException {
