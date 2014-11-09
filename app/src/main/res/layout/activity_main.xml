@@ -7,15 +7,22 @@
     android:background="@drawable/output_0308"
     tools:context="com.asobullc.jeffrey.capitalone.MainActivity"
     android:orientation="vertical"
-    android:id="@+id/login">
+    android:id="@+id/login"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="164dp"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:src="@drawable/red_hair_smile_transparent"/>
+        android:src="@drawable/red_hair_smile_transparent"
+        android:layout_weight="0.34" />
 
     <EditText
         android:layout_width="match_parent"
@@ -41,6 +48,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:fontFamily="Arial"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        style="?android:attr/borderlessButtonStyle" />
 
 </LinearLayout>
