@@ -12,7 +12,7 @@
         <EditText
             android:layout_width="179dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
+            android:id="@+id/monthlyGoal"
             android:text="Monthly Goal:" />
 
         <EditText
@@ -20,15 +20,14 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/editText3"
-            android:text="10.56" />
+            android:id="@+id/monthlyGoalInput" />
 
         </LinearLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/AccountConnected"
         android:text="Accounts Connected"
         android:layout_weight="0.06" />
 
