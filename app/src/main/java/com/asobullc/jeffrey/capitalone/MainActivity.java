@@ -25,6 +25,7 @@ import java.util.Scanner;
 
 public class MainActivity extends Activity implements OnClickListener {
     Button loginButton;
+    ServerUtilities su;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,23 +35,36 @@ public class MainActivity extends Activity implements OnClickListener {
         loginButton = (Button) findViewById(R.id.loginButton);
         loginButton.setOnClickListener(this);
 
+        su = new ServerUtilities();
+
     }
 
     public void onClick(View view) {
-        Toast.makeText(getBaseContext(), "Login Successful", Toast.LENGTH_LONG).show();
+        Socket socket;
+        try {
+            String host = "jet.codebasics.com";
+            String bool;
+            int port = 1566;
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+
+            socket = new Socket(host, port);
+
+            (su.new readWrite("v " + ((EditText) findViewById(R.id.username)).getText().toString() +
+                    " " + ((EditText) findViewById(R.id.password)).getText().toString(), socket, this)).start();
+        }
+        catch (Exception e) {}
+    }
+
+    public void nextView(boolean valid) {
         Intent intent = new Intent(this, MainSettingsActivity.class);
         startActivity(intent);
-      /*  try {
-            if(validateLogin() == true) {
+            if(valid) {
                 Toast.makeText(getBaseContext(), "Login Successful", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(this, MainSettingsActivity.class);
                 startActivity(intent);
             }
             else
                 Toast.makeText(getBaseContext(), "Login Failed", Toast.LENGTH_LONG).show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } */
     }
 
 
@@ -74,6 +88,15 @@ public class MainActivity extends Activity implements OnClickListener {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void inputHandler(String input) {
+        String[] args = input.split(" ");
+        nextView(true);
+        if (args[0].equals("true"))
+            nextView(true);
+        else if (args[0].equals("false"))
+            nextView(false);
     }
 
     public boolean validateLogin() throws IOException {
