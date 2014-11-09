@@ -6,11 +6,11 @@ package com.asobullc.jeffrey.capitalone;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-        import android.graphics.BitmapFactory;
-        import android.os.Bundle;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
-        import com.asobullc.jeffrey.capitalone.R;
+import com.asobullc.jeffrey.capitalone.R;
 
 public class MainGroupActivity extends Activity {
 

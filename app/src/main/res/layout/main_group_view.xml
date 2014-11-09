@@ -9,6 +9,6 @@
         android:layout_height="100dp"
         android:scaleType="centerCrop"
         android:layout_gravity="center"
-        android:src="@drawable/red_hair_smile" />
+        android:src="@drawable/red_hair_smile_transparent" />
 
 </LinearLayout>

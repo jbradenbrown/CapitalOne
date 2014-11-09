@@ -15,7 +15,7 @@
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:src="@drawable/red_hair_smile"/>
+        android:src="@drawable/red_hair_smile_transparent"/>
 
     <EditText
         android:layout_width="match_parent"
