@@ -25,8 +25,8 @@ public class MainIndividualActivity extends Activity implements View.OnClickList
 
         setContentView(R.layout.main_individual_view);
 
-        image_to_group = (ImageButton) findViewById(R.id.imageButton);
-        image_to_group.setOnClickListener(this);
+//        image_to_group = (ImageButton) findViewById(R.id.imageButton);
+//        image_to_group.setOnClickListener(this);
     }
 
     public void onClick(View view) {
