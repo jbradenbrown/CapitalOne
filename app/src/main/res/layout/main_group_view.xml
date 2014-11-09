@@ -2,6 +2,85 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fhfghh">
+    android:id="@+id/fhfghh"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_weight="0.03"
+        android:text="Groups"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText4"-->
+        <!--android:layout_weight="0.05"-->
+        <!--android:text="All These Squares Make A Circle"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#FF7F50"/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All These Squares Make A Circle"
+        android:id="@+id/ATSMACButton"
+        android:layout_weight="0.03"
+        android:layout_gravity="center"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:background="#FF7F50"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capital One"
+        android:id="@+id/ATSMACButton2"
+        android:layout_weight="0.03"
+        android:layout_gravity="center"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:background="#34DDDD"
+        style="?android:attr/borderlessButtonStyle"/>
+    <!---->
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText5"-->
+        <!--android:layout_weight="0.05"-->
+        <!--android:text="Capital One"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#34DDDD"/>-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_weight="0.05"
+        android:text="EMERSONS BUNCH"
+        android:gravity="center"
+        android:background="#FF69B4"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_weight="0.05"
+        android:text="DALLAS"
+        android:gravity="center"
+        android:background="#FFFF00"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_weight="0.05"
+        android:text="ALL THESE CIRCLES MAKE A SQUARE"
+        android:gravity="center"
+        android:background="#4433FF"/>
 
 </LinearLayout>
