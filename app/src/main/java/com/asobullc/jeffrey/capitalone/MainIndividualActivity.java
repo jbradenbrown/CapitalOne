@@ -6,11 +6,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**
  * Created by Kevin on 11/8/2014.
  */
-public class MainIndividualActivity extends Activity {
+public class MainIndividualActivity extends Activity implements View.OnClickListener {
+
+    ImageButton image_to_group;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +24,14 @@ public class MainIndividualActivity extends Activity {
         Intent intent = getIntent();
 
         setContentView(R.layout.main_individual_view);
+
+        image_to_group = (ImageButton) findViewById(R.id.imageButton);
+        image_to_group.setOnClickListener(this);
     }
 
     public void onClick(View view) {
+        Intent intent = new Intent(this, MainGroupActivity.class);
+        startActivity(intent);
     }
 
 
