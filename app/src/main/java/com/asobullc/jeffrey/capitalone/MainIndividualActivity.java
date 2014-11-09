@@ -1,21 +1,16 @@
 package com.asobullc.jeffrey.capitalone;
 
 import android.app.Activity;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.content.Intent;
 
 /**
- * Created by MacProJJ on 11/8/14.
+ * Created by Kevin on 11/8/2014.
  */
-public class MainSettingsActivity extends Activity implements OnClickListener {
-    Button addAccount;
-    Button doneButton;
+public class MainIndividualActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +18,10 @@ public class MainSettingsActivity extends Activity implements OnClickListener {
 
         Intent intent = getIntent();
 
-        setContentView(R.layout.main_settings_view);
-
-        doneButton = (Button) findViewById(R.id.doneButton);
-        doneButton.setOnClickListener(this);
+        setContentView(R.layout.main_individual_view);
     }
 
     public void onClick(View view) {
-        Intent intent = new Intent(this, MainIndividualActivity.class);
-        startActivity(intent);
     }
 
 

@@ -103,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Account"
-        android:id="@+id/button" />
+        android:id="@+id/addButton" />
 
     <Space
         android:layout_width="match_parent"
@@ -116,7 +116,7 @@
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:text="Done"
-        android:id="@+id/button2"
+        android:id="@+id/doneButton"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
