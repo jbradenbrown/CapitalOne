@@ -14,7 +14,7 @@ import android.content.Intent;
  * Created by MacProJJ on 11/8/14.
  */
 public class MainSettingsActivity extends Activity implements OnClickListener {
-    Button addAccount;
+    Button done;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,8 @@ public class MainSettingsActivity extends Activity implements OnClickListener {
 
         setContentView(R.layout.main_settings_view);
 
-        addAccount = (Button) findViewById(R.id.addButton);
-        addAccount.setOnClickListener(this);
+        done = (Button) findViewById(R.id.doneButton);
+        done.setOnClickListener(this);
     }
 
     public void onClick(View view) {
