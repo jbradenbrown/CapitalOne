@@ -35,13 +35,32 @@
         </activity>
 
         <activity
-            android:name="com.asobullc.jeffrey.capitalone.MainIndividualActivity"
+        android:name="com.asobullc.jeffrey.capitalone.MainIndividualActivity"
+        android:label="@string/title_activity_main"
+        android:parentActivityName="com.asobullc.jeffrey.capitalone.MainSettingsActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.asobullc.jeffrey.capitalone.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.asobullc.jeffrey.capitalone.MainGroupFriendsJen"
             android:label="@string/title_activity_main"
-            android:parentActivityName="com.asobullc.jeffrey.capitalone.MainSettingsActivity">
+            android:parentActivityName="com.asobullc.jeffrey.capitalone.MainGroupActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.asobullc.jeffrey.capitalone.MainActivity" />
+                android:value="com.asobullc.jeffrey.capitalone.MainGroupActivity" />
         </activity>
+
+        <activity
+            android:name="com.asobullc.jeffrey.capitalone.MainGroupCapitalOne"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="com.asobullc.jeffrey.capitalone.MainGroupFriendsJen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asobullc.jeffrey.capitalone.MainGroupFriendsJen" />
+        </activity>
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
