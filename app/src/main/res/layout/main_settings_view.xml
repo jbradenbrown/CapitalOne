@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -23,6 +28,11 @@
             android:id="@+id/monthlyGoalInput" />
 
         </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07" />
 
     <EditText
         android:layout_width="match_parent"
