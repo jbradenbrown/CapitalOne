@@ -44,6 +44,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
         // Start the animation (looped playback by default).
         frameAnimation.start();
+
     }
 
     public void onClick(View view) {
