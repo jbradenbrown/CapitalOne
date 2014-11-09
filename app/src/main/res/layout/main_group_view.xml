@@ -12,6 +12,7 @@
         android:layout_weight="0.03"
         android:text="Groups"
         android:gravity="center"
+        android:focusable="false"
         android:background="#FFFFFF"/>
 
     <!--<EditText-->

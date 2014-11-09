@@ -4,6 +4,8 @@ package com.asobullc.jeffrey.capitalone;
  * Created by MacProJJ on 11/8/14.
  */
 import android.app.Activity;
+import android.view.View;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,10 +14,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import com.asobullc.jeffrey.capitalone.R;
 
-public class MainGroupActivity extends Activity {
-
-    ImageView imageView1;
-    RoundImage roundedImage;
+public class MainGroupActivity extends Activity implements View.OnClickListener{
+    Button friends;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,14 @@ public class MainGroupActivity extends Activity {
 
         Intent intent = getIntent();
 
-//        setContentView(R.layout.main_group_view);
-//        imageView1 = (ImageView) findViewById(R.id.imageView1);
-//        Bitmap bm = BitmapFactory.decodeResource(getResources(),R.drawable.red_hair_smile);
-//        roundedImage = new RoundImage(bm);
-//        imageView1.setImageDrawable(roundedImage);
+        setContentView(R.layout.main_group_view);
+
+        friends = (Button) findViewById(R.id.ATSMACButton);
+        friends.setOnClickListener(this);
+    }
+
+    public void onClick(View view) {
+        Intent intent = new Intent(this, MainGroupFriendsJen.class);
+        startActivity(intent);
     }
 }
