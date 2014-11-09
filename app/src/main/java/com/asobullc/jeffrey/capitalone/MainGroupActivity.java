@@ -23,10 +23,10 @@ public class MainGroupActivity extends Activity {
 
         Intent intent = getIntent();
 
-        setContentView(R.layout.main_group_view);
-        imageView1 = (ImageView) findViewById(R.id.imageView1);
-        Bitmap bm = BitmapFactory.decodeResource(getResources(),R.drawable.red_hair_smile);
-        roundedImage = new RoundImage(bm);
-        imageView1.setImageDrawable(roundedImage);
+//        setContentView(R.layout.main_group_view);
+//        imageView1 = (ImageView) findViewById(R.id.imageView1);
+//        Bitmap bm = BitmapFactory.decodeResource(getResources(),R.drawable.red_hair_smile);
+//        roundedImage = new RoundImage(bm);
+//        imageView1.setImageDrawable(roundedImage);
     }
 }
