@@ -129,7 +129,6 @@
         android:text="Add Account"
         android:id="@+id/addButton"
         android:layout_gravity="center_horizontal"
-<<<<<<< HEAD
         android:layout_weight="0.09"
         android:textColor="#000000"/>
 
@@ -139,9 +138,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.53" />
 
-=======
-        android:layout_weight="0.09" />
->>>>>>> FETCH_HEAD
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="81dp"
