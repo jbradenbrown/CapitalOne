@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:id="@+id/"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/red_hair_smile" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="290dp"
+            android:layout_height="109dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Username"
+                android:ems="10"
+                android:id="@+id/editText" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.64" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:stretchColumns="1">
+        android:id="@+id/goals">
+
+        <TableRow>
+            <TextView
+                android:text="Daily Goal: "
+                android:padding="5dip" />
+
+            <TextView
+                android:text="Amount"
+                android:gravity="right"
+                android:padding="5dip" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:text="Weekly Goal:"
+                android:padding="5dip" />
+
+            <TextView
+                android:text="Amount"
+                android:gravity="right"
+                android:padding="5dip" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:text="Monthly Goal: "
+                android:padding="5dip" />
+
+            <TextView
+                android:text="Amount"
+                android:gravity="right"
+                android:padding="5dip" />
+
+        </TableRow>
+
+        </TableLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_weight="0.05"
+        android:text="Charts" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chart_temp" />
+
+
+</LinearLayout>

@@ -25,7 +25,8 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/monthlyGoalInput" />
+            android:id="@+id/monthlyGoalInput"
+            android:text="$2000" />
 
         </LinearLayout>
 
