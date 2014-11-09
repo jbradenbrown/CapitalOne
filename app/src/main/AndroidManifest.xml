@@ -35,12 +35,12 @@
         </activity>
 
         <activity
-        android:name="com.asobullc.jeffrey.capitalone.MainIndividualActivity"
-        android:label="@string/title_activity_main"
-        android:parentActivityName="com.asobullc.jeffrey.capitalone.MainSettingsActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.asobullc.jeffrey.capitalone.MainActivity" />
+            android:name="com.asobullc.jeffrey.capitalone.MainIndividualActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="com.asobullc.jeffrey.capitalone.MainSettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asobullc.jeffrey.capitalone.MainActivity" />
         </activity>
 
         <activity
