@@ -13,7 +13,8 @@
         android:text="Groups"
         android:gravity="center"
         android:focusable="false"
-        android:background="#FFFFFF"/>
+        android:background="#FFFFFF"
+        android:textColor="#000000"/>
 
     <!--<EditText-->
         <!--android:layout_width="match_parent"-->
@@ -34,7 +35,8 @@
         android:fontFamily="Arial"
         android:textSize="20dp"
         android:background="#FF7F50"
-        style="?android:attr/borderlessButtonStyle"/>
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#000000"/>
 
     <Button
         android:layout_width="match_parent"
@@ -46,7 +48,8 @@
         android:fontFamily="Arial"
         android:textSize="20dp"
         android:background="#34DDDD"
-        style="?android:attr/borderlessButtonStyle"/>
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#000000"/>
     <!---->
     <!--<EditText-->
         <!--android:layout_width="match_parent"-->
@@ -64,7 +67,8 @@
         android:layout_weight="0.05"
         android:text="EMERSONS BUNCH"
         android:gravity="center"
-        android:background="#FF69B4"/>
+        android:background="#FF69B4"
+        android:textColor="#000000"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -73,7 +77,8 @@
         android:layout_weight="0.05"
         android:text="DALLAS"
         android:gravity="center"
-        android:background="#FFFF00"/>
+        android:background="#FFFF00"
+        android:textColor="#000000"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -82,6 +87,7 @@
         android:layout_weight="0.05"
         android:text="ALL THESE CIRCLES MAKE A SQUARE"
         android:gravity="center"
-        android:background="#4433FF"/>
+        android:background="#4433FF"
+        android:textColor="#000000"/>
 
 </LinearLayout>

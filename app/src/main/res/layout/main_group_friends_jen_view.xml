@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText778"
         android:layout_weight="0.01"
-        android:text="Dinner at Al Biernats"
+        android:text="Dinner at Cheesecake Factory"
         android:gravity="center"
         android:background="#FFFFFF"/>
 

@@ -21,7 +21,12 @@
         android:text="Sally Emerson"
         android:ems="10"
         android:id="@+id/editText"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#000000"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
     <!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
         <!--android:layout_width="match_parent"-->
@@ -77,10 +82,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:id="@+id/progressbar"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
         android:src="@drawable/progressbar"
         android:background="#FFFFFF"/>
 
@@ -92,28 +96,42 @@
         <!--android:text="Monthly Goal"-->
         <!--android:gravity="center"/>-->
 
-    <!--<EditText-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/editText345"-->
-        <!--android:layout_weight="0.05"-->
-        <!--android:text="$500/1000"-->
-        <!--android:gravity="center"/>-->
-    <!---->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText345"
+        android:layout_weight="0.05"
+        android:text="$500/1000"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView"
+
+    <!--<ImageView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:src="@drawable/chart_temp" />-->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/chart_temp" />
+        android:layout_weight="0.61" />
 
     <Button
-        android:layout_width="37dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/toGroup"
-        android:layout_gravity="center_horizontal" />
+        android:text="Group"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"/>
 
 
 
