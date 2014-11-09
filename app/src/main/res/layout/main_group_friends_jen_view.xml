@@ -52,30 +52,109 @@
         android:layout_weight="0.03"
         android:background="#FFFFFF"/>
 
-    <EditText
+    <View
+        android:layout_height="1dip"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_weight="0.05"
-        android:text="Jeffrey Brown"
-        android:gravity="center"
-        android:background="#F5C52C"/>
+        android:background="#000000"></View>
 
-    <EditText
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText5"
-        android:layout_weight="0.05"
-        android:text="Jennifer Jiang"
-        android:gravity="center"
-        android:background="#8AC95B"/>
+        android:layout_height="102dp">
 
-    <EditText
+        <ImageView
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:src="@drawable/asian_smile"
+            android:background="#8AC95B" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText5"
+            android:text="Jennifer Jiang"
+            android:gravity="center"
+            android:background="#8AC95B"/>
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dip"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:layout_weight="0.05"
-        android:text="Kevin Szwagiel"
-        android:gravity="center"
+        android:background="#000000"></View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="101dp">
+
+        <ImageView
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:src="@drawable/white_guy_five"
+            android:background="#F5C52C"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText4"
+            android:text="Jeffrey Brown"
+            android:gravity="center"
+            android:background="#F5C52C"/>
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dip"
+        android:layout_width="match_parent"
+        android:background="#000000"></View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="101dp">
+
+        <ImageView
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView4"
+            android:src="@drawable/black_guy_one"
+            android:background="#FF3333"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText6"
+            android:text="Kevin Szwagiel"
+            android:gravity="center"
+            android:background="#FF3333"/>
+    </LinearLayout>
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText4"-->
+        <!--android:layout_weight="0.05"-->
+        <!--android:text="Jeffrey Brown"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#F5C52C"/>-->
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText5"-->
+        <!--android:layout_weight="0.05"-->
+        <!--android:text="Jennifer Jiang"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#8AC95B"/>-->
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText6"-->
+        <!--android:layout_weight="0.05"-->
+        <!--android:text="Kevin Szwagiel"-->
+        <!--android:gravity="center"-->
         android:background="#FF3333"/>
+
 </LinearLayout>
