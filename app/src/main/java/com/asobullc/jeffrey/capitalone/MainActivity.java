@@ -2,6 +2,7 @@ package com.asobullc.jeffrey.capitalone;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Scanner;
 
 
 public class MainActivity extends Activity {
@@ -65,19 +67,33 @@ public class MainActivity extends Activity {
 
     public boolean validateLogin() throws IOException {
         String host = "jet.codebasics.com";
+        String bool;
         int port = 1566;
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         Socket socket = new Socket(host, port);
 
         PrintWriter serverOut = new PrintWriter(socket.getOutputStream(), true);
 
-        BufferedReader serverIn = new BufferedReader(
-                new InputStreamReader(socket.getInputStream()));
+        //InputStreamReader serverIn = new InputStreamReader(socket.getInputStream());
 
-        serverOut.write("v " + ((EditText)findViewById(R.id.username)).getText().toString() +
-                " " + ((EditText)findViewById(R.id.password)).getText().toString());
+        serverOut.write("v " + ((EditText) findViewById(R.id.username)).getText().toString() +
+                " " + ((EditText) findViewById(R.id.password)).getText().toString());
 
+        //bool = serverIn.;
+        //Scanner sc = new Scanner(socket.getInputStream());
+        //bool = sc.nextLine();
+
+        serverOut.flush();
+        serverOut.close();
         socket.close();
         return true;
+/*
+        if(bool == "true")
+            return true;
+        else
+            return false;
+            */
     }
 }
