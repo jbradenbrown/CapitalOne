@@ -3,7 +3,7 @@
 
     <string name="app_name">CapitalOne</string>
     <string name="login">Login</string>
-    <string name="title_activity_main">WelcomeToApp</string>
+    <string name="title_activity_main">CapitalOne</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
