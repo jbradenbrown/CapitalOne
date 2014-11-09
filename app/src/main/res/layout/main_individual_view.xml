@@ -75,22 +75,30 @@
 
     <!--</TableLayout>-->
 
-    <EditText
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText34"
-        android:layout_weight="0.05"
-        android:text="Monthly Goal"
-        android:gravity="center"/>
+        android:id="@+id/progressbar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/progressbar" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText345"
-        android:layout_weight="0.05"
-        android:text="$500/1000"
-        android:gravity="center"/>
-    
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText34"-->
+        <!--android:layout_weight="0.05"-->
+        <!--android:text="Monthly Goal"-->
+        <!--android:gravity="center"/>-->
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText345"-->
+        <!--android:layout_weight="0.05"-->
+        <!--android:text="$500/1000"-->
+        <!--android:gravity="center"/>-->
+    <!---->
 
     <ImageView
         android:layout_width="300dp"
