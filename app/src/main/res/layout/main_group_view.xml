@@ -8,7 +8,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
+        android:id="@+id/groups"
         android:layout_weight="0.03"
         android:text="Groups"
         android:gravity="center"
@@ -59,7 +59,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText6"
+        android:id="@+id/emersonBunch"
         android:layout_weight="0.05"
         android:text="EMERSONS BUNCH"
         android:gravity="center"
@@ -68,7 +68,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText6"
+        android:id="@+id/dallas"
         android:layout_weight="0.05"
         android:text="DALLAS"
         android:gravity="center"
@@ -77,7 +77,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText6"
+        android:id="@+id/circleSquare"
         android:layout_weight="0.05"
         android:text="ALL THESE CIRCLES MAKE A SQUARE"
         android:gravity="center"
