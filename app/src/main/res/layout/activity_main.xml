@@ -14,7 +14,11 @@
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
+<<<<<<< HEAD
         android:src="@drawable/red_hair_smile"/>
+=======
+		android:src="@drawable/RedHairSmile"/>
+>>>>>>> FETCH_HEAD
 
     <EditText
         android:layout_width="match_parent"
