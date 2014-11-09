@@ -24,6 +24,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        loginButton = (Button) findViewById(R.id.loginButton);
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 try {
@@ -74,6 +76,8 @@ public class MainActivity extends Activity {
 
         serverOut.write("v " + ((EditText)findViewById(R.id.username)).getText().toString() +
                 " " + ((EditText)findViewById(R.id.password)).getText().toString());
+
+        socket.close();
         return true;
     }
 }
