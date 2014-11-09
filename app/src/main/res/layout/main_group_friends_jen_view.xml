@@ -4,14 +4,20 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <EditText
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
         android:layout_weight="0.03"
         android:text="All These Square Make A Circle"
         android:gravity="center"
-        android:background="#FFFFFF"/>
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        style="?android:attr/borderlessButtonStyle" />
 
     <EditText
         android:layout_width="match_parent"
