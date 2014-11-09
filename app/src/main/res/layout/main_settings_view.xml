@@ -106,13 +106,6 @@
         android:id="@+id/addButton"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.09" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.53" />
-
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="81dp"
