@@ -74,5 +74,6 @@ public class MainActivity extends Activity {
 
         serverOut.write("v " + ((EditText)findViewById(R.id.username)).getText().toString() +
                 " " + ((EditText)findViewById(R.id.password)).getText().toString());
+        return true;
     }
 }
