@@ -79,19 +79,25 @@ public class MainActivity extends Activity implements OnClickListener {
 
         Socket socket = new Socket(host, port);
 
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(socket.getInputStream()));
+
         PrintWriter serverOut = new PrintWriter(socket.getOutputStream(), true);
 
-        //InputStreamReader serverIn = new InputStreamReader(socket.getInputStream());
+        //InputStreamReader serverIn = new InputStreamReader(socket.getInputStream())
 
-        serverOut.write("v " + ((EditText) findViewById(R.id.username)).getText().toString() +
+        serverOut.println("v " + ((EditText) findViewById(R.id.username)).getText().toString() +
                 " " + ((EditText) findViewById(R.id.password)).getText().toString());
 
         //bool = serverIn.;
         //Scanner sc = new Scanner(socket.getInputStream());
-        //bool = sc.nextLine();
-
         serverOut.flush();
         serverOut.close();
+        bool = in.readLine();
+        in.close();
+        ((EditText) findViewById(R.id.username)).setText(bool);
+        System.err.println(bool);
+
         socket.close();
         return true;
 /*
