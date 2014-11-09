@@ -52,4 +52,34 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_weight="0.05" />
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/facebook"
+            android:src="@drawable/facebook"
+            android:layout_gravity="center"
+            android:background="#FFFFFF" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/gmail"
+            android:src="@drawable/gmail"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
 </LinearLayout>
