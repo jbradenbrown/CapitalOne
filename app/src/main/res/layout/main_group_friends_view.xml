@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:id="@+id/goals">
+
+    <TableRow>
+        <TextView
+            android:text="Goal"
+            android:padding="10dip" />
+
+        <TextView
+            android:text="Stay in the Green"
+            android:gravity="right"
+            android:padding="10dip" />
+
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:text="Start Date"
+            android:padding="10dip" />
+
+        <TextView
+            android:text="11/9/2014"
+            android:gravity="right"
+            android:padding="10dip" />
+
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:text="Deadline"
+            android:padding="10dip" />
+
+        <TextView
+            android:text="12/9/2014"
+            android:gravity="right"
+            android:padding="10dip" />
+
+    </TableRow>
+
+</TableLayout>
