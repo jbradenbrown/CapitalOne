@@ -37,39 +37,95 @@
         android:layout_weight="0.03"
         android:background="#FFFFFF"/>
 
-    <EditText
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_weight="0.05"
-        android:text="Garret Greenwood"
-        android:gravity="center"
-        android:background="#F5C52C"/>
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText5"
-        android:layout_weight="0.05"
-        android:text="Cole Woods"
-        android:gravity="center"
-        android:background="#8AC95B"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_weight="1.60"
+            android:src="@drawable/white_guy_four"
+            android:background="#F5C52C"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:layout_weight="0.05"
-        android:text="Connor Cone"
-        android:gravity="center"
-        android:background="#FF3333"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:id="@+id/editText4"
+            android:layout_weight="1.29"
+            android:text="Garret Greenwood"
+            android:gravity="center"
+            android:background="#F5C52C"/>
+    </LinearLayout>
 
-    <EditText
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:layout_weight="0.05"
-        android:text="Austin Paxton"
-        android:gravity="center"
-        android:background="#F5C52C"/>
+        android:layout_weight="0.03">
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="108dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/white_guy_2"
+            android:background="#8AC95B"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/editText5"
+            android:layout_weight="1"
+            android:text="Cole Woods"
+            android:gravity="center"
+            android:background="#8AC95B"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03">
+
+        <ImageView
+            android:layout_width="151dp"
+            android:layout_height="121dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/white_guy_one"
+            android:background="#FF3333"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/editText6"
+            android:layout_weight="0.92"
+            android:text="Connor Cone"
+            android:gravity="center"
+            android:background="#FF3333"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/white_guy_three"
+            android:background="#F5C52C"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText6"
+            android:text="Austin Paxton"
+            android:gravity="center"
+            android:background="#F5C52C"/>
+    </LinearLayout>
+
 </LinearLayout>
