@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_weight="0.03"
+        android:text="Capital One"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_weight="0.01"
+        android:text="Stay Yellow"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_weight="0.02"
+        android:text="May 9th, 2015"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_weight="0.05"
+        android:text="Garret Greenwood"
+        android:gravity="center"
+        android:background="#F5C52C"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_weight="0.05"
+        android:text="Cole Woods"
+        android:gravity="center"
+        android:background="#8AC95B"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_weight="0.05"
+        android:text="Connor Cone"
+        android:gravity="center"
+        android:background="#FF3333"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_weight="0.05"
+        android:text="Austin Paxton"
+        android:gravity="center"
+        android:background="#F5C52C"/>
+</LinearLayout>
