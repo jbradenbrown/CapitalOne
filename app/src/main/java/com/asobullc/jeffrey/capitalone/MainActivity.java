@@ -1,11 +1,14 @@
 package com.asobullc.jeffrey.capitalone;
 
 import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,7 +21,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener {
     Button loginButton;
 
     @Override
@@ -27,19 +30,21 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         loginButton = (Button) findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(this);
+    }
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                try {
-                    if(validateLogin() == true)
-                        Toast.makeText(getBaseContext(), "Logged Successful", Toast.LENGTH_LONG).show();
-                    else
-                        Toast.makeText(getBaseContext(), "Login Failed", Toast.LENGTH_LONG).show();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+    public void onClick(View view) {
+        try {
+            if(validateLogin() == true) {
+                Toast.makeText(getBaseContext(), "Login Successful", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, MainSettingsActivity.class);
+                startActivity(intent);
             }
-        });
+            else
+                Toast.makeText(getBaseContext(), "Login Failed", Toast.LENGTH_LONG).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
